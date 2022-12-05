@@ -22,7 +22,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label>Fine (in Rs.)</label>
+                            <label>Fine (in Ksh.)</label>
                             <input type="number" class="form-control" name="fine" value="{{ $data->fine }}" required>
                             @error('fine')
                                 <div class="alert alert-danger" role="alert">
@@ -30,7 +30,7 @@
                                 </div>
                             @enderror
                         </div>
-                        <input type="submit" class="btn btn-danger" value="Update" required>
+                        <input type="submit" class="btn just-btn" value="Update" required>
                     </form>
                 </div>
             </div>

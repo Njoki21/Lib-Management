@@ -19,7 +19,7 @@
                                 </div>
                             @enderror
                         </div>
-                        <input type="submit" class="btn btn-danger" name="search_date" value="Search">
+                        <input type="submit" class="btn just-btn" name="search_date" value="Search">
                     </form>
                 </div>
             </div>

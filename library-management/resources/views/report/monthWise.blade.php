@@ -14,7 +14,7 @@
                         <div class="form-group">
                             <input type="month" name="month" class="form-control" value="{{ date('Y-m') }}">
                         </div>
-                        <input type="submit" class="btn btn-danger" name="search_month" value="Search">
+                        <input type="submit" class="btn just-btn" name="search_month" value="Search">
                     </form>
                 </div>
             </div>

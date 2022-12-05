@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\auth\LoginController;
-use App\Http\Controllers\AutherController;
+use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\BookIssueController;
 use App\Http\Controllers\CategoryController;
@@ -38,12 +38,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [dashboardController::class, 'index'])->name('dashboard');
 
     // author CRUD
-    Route::get('/authors', [AutherController::class, 'index'])->name('authors');
-    Route::get('/authors/create', [AutherController::class, 'create'])->name('authors.create');
-    Route::get('/authors/edit/{auther}', [AutherController::class, 'edit'])->name('authors.edit');
-    Route::post('/authors/update/{id}', [AutherController::class, 'update'])->name('authors.update');
-    Route::post('/authors/delete/{id}', [AutherController::class, 'destroy'])->name('authors.destroy');
-    Route::post('/authors/create', [AutherController::class, 'store'])->name('authors.store');
+    Route::get('/authors', [AuthorController::class, 'index'])->name('authors');
+    Route::get('/authors/create', [AuthorController::class, 'create'])->name('authors.create');
+    Route::get('/authors/edit/{author}', [AuthorController::class, 'edit'])->name('authors.edit');
+    Route::post('/authors/update/{id}', [AuthorController::class, 'update'])->name('authors.update');
+    Route::post('/authors/delete/{id}', [AuthorController::class, 'destroy'])->name('authors.destroy');
+    Route::post('/authors/create', [AuthorController::class, 'store'])->name('authors.store');
 
     // publisher crud
     Route::get('/publishers', [PublisherController::class, 'index'])->name('publishers');

@@ -31,7 +31,7 @@
                                     <td class="id">{{ $book->id }}</td>
                                     <td>{{ $book->name }}</td>
                                     <td>{{ $book->category->name }}</td>
-                                    <td>{{ $book->auther->name }}</td>
+                                    <td>{{ $book->author->name }}</td>
                                     <td>{{ $book->publisher->name }}</td>
                                     <td>
                                         @if ($book->status == 'Y')

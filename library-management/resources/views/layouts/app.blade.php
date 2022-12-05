@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"> <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }} "> <!-- Custom stlylesheet -->
 </head>
@@ -18,7 +19,7 @@
             <div class="row">
                 <div class="offset-md-4 col-md-4">
                     <div class="logo">
-                        <a href="#"><img src="{{ asset('images/library.png') }}"></a>
+
                     </div>
                 </div>
                 <div class="offset-md-2 col-md-2">
@@ -67,12 +68,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>© Copyright 2021 <a href="https://www.yahoobaba.net">YahooBaba 😎</a></span>
+                    <span>© Copyright 2022 <a href="#">Hellen Ndathi</a></span>
                 </div>
             </div>
         </div>
     </div>
     <!-- /FOOTER -->
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>

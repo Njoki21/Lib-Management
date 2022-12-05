@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-md-3 mb-4">
                     <div class="card" style="width: 14rem; margin: 0 auto;">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center" id="app">
                             <p class="card-text">{{ $authors }}</p>
                             <h5 class="card-title mb-0">Authors Listed</h5>
                         </div>

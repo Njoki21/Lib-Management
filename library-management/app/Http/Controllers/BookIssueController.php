@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\book_issue;
 use App\Http\Requests\Storebook_issueRequest;
 use App\Http\Requests\Updatebook_issueRequest;
-use App\Models\auther;
+use App\Models\author;
 use App\Models\book;
 use App\Models\settings;
 use App\Models\student;

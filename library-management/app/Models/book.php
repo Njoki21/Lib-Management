@@ -13,13 +13,13 @@ class book extends Model
     protected $guarded = [];
 
     /**
-     * Get the auther that owns the book
+     * Get the author that owns the book
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function auther(): BelongsTo
+    public function author(): BelongsTo
     {
-        return $this->belongsTo(auther::class,'auther_id','id');
+        return $this->belongsTo(author::class,'auther_id','id');
     }
 
     /**

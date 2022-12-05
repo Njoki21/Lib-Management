@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\changePasswordRequest;
-use App\Models\auther;
+use App\Models\author;
 use App\Models\book;
 use App\Models\book_issue;
 use App\Models\category;
@@ -17,7 +17,7 @@ class dashboardController extends Controller
     public function index()
     {
         return view('dashboard', [
-            'authors' => auther::count(),
+            'authors' => author::count(),
             'publishers' => publisher::count(),
             'categories' => category::count(),
             'books' => book::count(),

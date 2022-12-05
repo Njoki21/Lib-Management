@@ -9,20 +9,20 @@
         </div>
         <div class="row">
             <div class="offset-md-3 col-md-6">
-                <form class="yourform" action="{{ route('authors.update', $auther->id) }}" method="post"
+                <form class="yourform" action="{{ route('authors.update', $author->id) }}" method="post"
                     autocomplete="off">
                     @csrf
                     <div class="form-group">
                         <label>Author Name</label>
                         <input type="text" class="form-control @error('name') isinvalid @enderror" name="name"
-                            value="{{ $auther->name }}" required>
+                            value="{{ $author->name }}" required>
                         @error('name')
                             <div class="alert alert-danger" role="alert">
                                 {{ $message }}
                             </div>
                         @enderror
                     </div>
-                    <input type="submit" name="submit" class="btn btn-danger" value="Update" required>
+                    <input type="submit" name="submit" class="btn just-btn" value="Update" required>
                 </form>
             </div>
         </div>

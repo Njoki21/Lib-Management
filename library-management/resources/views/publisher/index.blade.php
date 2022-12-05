@@ -31,7 +31,7 @@
                                     <td class="delete">
                                         <form action="{{ route('publisher.destroy', $publisher) }}" method="post"
                                             class="form-hidden">
-                                            <button class="btn btn-danger delete-author">Delete</button>
+                                            <button class="btn just-btn delete-author">Delete</button>
                                             @csrf
                                         </form>
                                     </td>

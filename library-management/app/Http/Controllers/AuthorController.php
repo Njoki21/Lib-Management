@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\auther;
-use App\Http\Requests\StoreautherRequest;
-use App\Http\Requests\UpdateautherRequest;
+use App\Models\author;
+use App\Http\Requests\StoreauthorRequest;
+use App\Http\Requests\UpdateauthorRequest;
 
-class AutherController extends Controller
+class AuthorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class AutherController extends Controller
      */
     public function index()
     {
-        return view('auther.index', [
-            'authors' => auther::Paginate(5)
+        return view('author.index', [
+            'authors' => author::Paginate(5)
         ]);
     }
 
@@ -27,46 +27,46 @@ class AutherController extends Controller
      */
     public function create()
     {
-        return view('auther.create');
+        return view('author.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreautherRequest  $request
+     * @param  \App\Http\Requests\StoreauthorRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreautherRequest $request)
+    public function store(StoreauthorRequest $request)
     {
-        auther::create($request->validated());
+        author::create($request->validated());
 
         return redirect()->route('authors');
     }
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\auther  $auther
+     * @param  \App\Models\author  $author
      * @return \Illuminate\Http\Response
      */
-    public function edit(auther $auther)
+    public function edit(author $author)
     {
-        return view('auther.edit', [
-            'auther' => $auther
+        return view('author.edit', [
+            'author' => $author
         ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateautherRequest  $request
-     * @param  \App\Models\auther  $auther
+     * @param  \App\Http\Requests\UpdateauthorRequest  $request
+     * @param  \App\Models\author  $author
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateautherRequest $request, $id)
+    public function update(UpdateauthorRequest $request, $id)
     {
-        $auther = auther::find($id);
-        $auther->name = $request->name;
-        $auther->save();
+        $author = author::find($id);
+        $author->name = $request->name;
+        $author->save();
 
         return redirect()->route('authors');
     }
@@ -78,7 +78,7 @@ class AutherController extends Controller
      */
     public function destroy($id)
     {
-        auther::findorfail($id)->delete();
+        author::findorfail($id)->delete();
         return redirect()->route('authors');
     }
 }

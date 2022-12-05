@@ -22,7 +22,7 @@
                             </div>
                         @enderror
                     </div>
-                    <input type="submit" name="submit" class="btn btn-danger" value="Update" required>
+                    <input type="submit" name="submit" class="btn just-btn" value="Update" required>
                 </form>
             </div>
         </div>
